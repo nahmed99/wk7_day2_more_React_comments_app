@@ -32,6 +32,10 @@ const CommentForm = ({handleCommentSubmit}) => {
         }
 
         // 2. update list of comments with new comment
+        handleCommentSubmit({
+            author: authorToSubmit,
+            text: textToSubmit
+        });
 
 
         // 3. reset form
