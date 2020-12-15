@@ -1,7 +1,8 @@
 import React, {useState} from 'react'; // Newer versions do NOT require the React import (done automatically)
 
 
-const CommentForm = () => {
+// the parmater name needs to match the name of the 'sent' variable/function.
+const CommentForm = ({handleCommentSubmit}) => {
 
     // We are going to setup two state variables. State variable are those that can change and then that change is reflected on the users view.
     // The states are set here, and not higher up because we only need to use them here.
